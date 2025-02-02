@@ -27,12 +27,5 @@ Ce projet permet aux joueurs de participer à des tournois en ligne en payant le
 🔜 Intégration d’un système de matchmaking  
 ✅ Récompenses distribuées automatiquement  
 
-## 🤝 Contribuer
-1. **Forker** le projet  
-2. **Créer** une branche (`git checkout -b feature-amélioration`)  
-3. **Committer** (`git commit -m "Ajout d'une nouvelle fonctionnalité"`)  
-4. **Pusher** (`git push origin feature-amélioration`)  
-5. **Ouvrir** une Pull Request  
-
 ## 📝 Licence
 Ce projet est sous licence MIT.
