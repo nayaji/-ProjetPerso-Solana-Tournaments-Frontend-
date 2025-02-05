@@ -1,0 +1,143 @@
+/* Reset et global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('csgo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px; /* Pour ne pas cacher le contenu sous le header */
+  padding-bottom: 50px; /* Pour ne pas cacher le contenu sous le footer */
+}
+
+/* Header fixe */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #ff9900;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+
+/* Footer fixe */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  font-size: 1em;
+  color: #bbbbbb;
+  border-top: 3px solid #ff9900;
+  text-align: center;
+}
+
+/* Conteneur principal */
+.dashboard-container {
+  width: 85%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Sections */
+section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Champ d'entrée et bouton */
+input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  background-color: #cc7a00;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* QR Code */
+#qrcodeContainer {
+  margin-top: 20px;
+}
+
+#qrcode {
+  width: 150px;
+  height: 150px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+}

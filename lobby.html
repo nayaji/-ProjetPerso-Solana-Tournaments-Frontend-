@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K7FBPZ5X');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the tournament lobby and wait for other players to connect. Once 10 players are connected, the game will start automatically.">
+  <meta name="keywords" content="lobby, tournament, players, Solana, Phantom, blockchain, game">
+  <meta name="author" content="njb">
+  <meta property="og:title" content="Prize-Empire | lobby">
+  <meta property="og:description" content="Join the tournament lobby and wait for other players to connect. Once 10 players are connected, the game will start automatically.">
+  <meta property="og:image" content="https://i.postimg.cc/RF0prPgv/empire.png">
+  <meta property="og:url" content="https://www.prize-empire.com/lobby.html">
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="https://i.postimg.cc/RF0prPgv/empire.png">
+  <meta name="twitter:title" content="Prize-Empire | lobby">
+  <meta name="twitter:description" content="Join the tournament lobby and wait for other players to connect. Once 10 players are connected, the game will start automatically.">
+  <meta name="twitter:image" content="https://i.postimg.cc/RF0prPgv/empire.png">
+  <title>Prize-Empire | Tournament Lobby</title>
+  <link rel="stylesheet" href="stylelob.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8M7JDCJKYW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8M7JDCJKYW');
+</script>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7FBPZ5X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<header>
+  Tournaments - Lobby
+</header>
+
+<main class="lobby-container">
+  
+  <section class="lobby-status">
+    <h1>Lobby</h1>
+    <p class="waiting-message">Wait for other players to connect...</p>
+    <p class="player-count">Players connected: <span id="playerCountDisplay">0</span> / 10</p>
+  </section>
+
+  <section class="lobby-actions">
+    <p>Once 10 players are connected, the game will start automatically.</p>
+    <button id="joinLobbyButton" style="display:none;">Join the lobby</button>
+    <div id="gameLinkContainer" style="display:none;">
+      <p>Your game link: <span id="gameLink"></span></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Prize-Empire - All rights reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.39.0/dist/index.iife.js"></script>
+<script src="script2.js"></script>
+
+</body>
+</html>

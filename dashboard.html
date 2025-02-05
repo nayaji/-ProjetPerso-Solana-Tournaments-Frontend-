@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K7FBPZ5X');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Access your tournament dashboard, make payments with Phantom, and view your stats.">
+  <meta name="keywords" content="csgo2, tournaments, Solana, Phantom, crypto, payments, blockchain">
+  <meta name="author" content="njb">
+  <meta property="og:title" content="Prize-Empire | Dashboard">
+  <meta property="og:description" content="Access your tournament dashboard, make payments with Phantom, and view your stats.">
+  <meta property="og:image" content="https://i.postimg.cc/RF0prPgv/empire.png">
+  <meta property="og:url" content="https://www.prize-empire.com/dashboard.html">
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="https://i.postimg.cc/RF0prPgv/empire.png">
+  <meta name="twitter:title" content="Prize-Empire | Dashboard">
+  <meta name="twitter:description" content="Access your tournament dashboard, make payments with Phantom, and view your stats.">
+  <meta name="twitter:image" content="https://i.postimg.cc/RF0prPgv/empire.png">
+  <title>Prize-Empire | Dashboard</title>
+  <link rel="stylesheet" href="styledash.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8M7JDCJKYW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8M7JDCJKYW');
+</script>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7FBPZ5X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<header>
+  Tournaments - Dashboard
+</header>
+
+<main class="dashboard-container">
+  
+  <section class="welcome-section">
+    <h1>Welcome</h1>
+  </section>
+
+  <!--
+  <section class="access-section">
+    <h2>Lobby Access Code</h2>
+    <input type="text" id="accessCode" placeholder="Enter access code" />
+    <button id="verifyCodeButton">Access Lobby</button>
+  </section>
+  -->
+
+  <section class="payment-section">
+    <h2>Join a CSGO2 Lobby</h2>
+    <p>Each match costs 0.005 SOL. The winners will share a total of 0.05 SOL, divided based on each player's performance.</p>
+    <p>Amount to pay: <strong>0.005 SOL</strong></p>
+    <button id="payButton">Pay with Phantom</button>
+
+    <!-- QR Code -->
+    <div id="qrcodeContainer" style="display: none;">
+      <img id="qrcode" src="" alt="QR Code">
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <h2>Statistics</h2>
+    <ul>
+      <li><strong>Matches played:</strong> 0</li>
+      <li><strong>Wins:</strong> 0</li>
+      <li><strong>Current balance:</strong> 0.000 SOL</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Prize-Empire - All rights reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.39.0/dist/index.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>

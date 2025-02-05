@@ -1,0 +1,170 @@
+/* Reset et global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('csgo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #ff9900;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  font-size: 1em;
+  color: #bbbbbb;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #ff9900;
+  margin-top: auto;
+}
+
+/* Conteneur principal */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Titres */
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff9900;
+  margin-bottom: 15px;
+}
+
+/* Paragraphe */
+p {
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+/* Boutons */
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #cc7a00;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Inputs */
+input[type="text"] {
+  padding: 12px;
+  font-size: 1.2em;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin-top: 10px;
+}
+
+input[type="text"]::placeholder {
+  color: #ddd;
+}
+
+/* QR Code */
+#qrcodeContainer img {
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Lobby Styles */
+#lobbyPage .container {
+  max-width: 800px;
+}
+
+#lobbyPage p {
+  font-size: 1.5em;
+}
+
+#joinLobbyButton {
+  background-color: #0077b6;
+}
+
+#joinLobbyButton:hover {
+  background-color: #005f8a;
+}
+
+/* Dashboard Styles */
+#dashboardPage .container {
+  max-width: 800px;
+}
+
+#dashboardPage #payButton {
+  background-color: #0077b6;
+}
+
+#dashboardPage #payButton:hover {
+  background-color: #005f8a;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+}
