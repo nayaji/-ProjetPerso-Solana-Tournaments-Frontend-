@@ -1,3 +1,5 @@
+# https://nayaji-tournament.netlify.app/
+
 # 🎮 Solana Tournaments
 
 ## 🚀 Introduction
